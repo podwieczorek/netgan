@@ -105,7 +105,7 @@ class NetGAN:
 
         assert rw_len > 1, "Random walk length must be > 1."
 
-        tf.set_random_seed(seed)
+        tf.random.set_seed(seed)
 
         self.N = N
         self.rw_len = rw_len
